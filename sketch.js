@@ -33,8 +33,7 @@ function setup() {
    
 	
 
-	engine = Engine.create();
-	world = engine.world;
+	
 
 	//Create the Bodies Here.
     fill("yellow");
@@ -64,7 +63,7 @@ function draw() {
 
 function keyPressed() {
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball, ball.position, {x: 10, y: 5})
+		Matter.Body.applyForce(ball, ball.position, {x: 80, y: -80})
 	}
 }
 
